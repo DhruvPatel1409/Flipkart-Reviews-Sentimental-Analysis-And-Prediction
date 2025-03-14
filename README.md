@@ -1,32 +1,36 @@
 # Flipkart-Reviews-Sentimental-Analysis-And-Prediction
 
-📌 Project Overview
-This project performs sentiment analysis on Flipkart product reviews using NLP and Machine Learning techniques. It classifies customer reviews as Positive, Negative, or Neutral and provides a sentiment confidence score.
+# Project Overview
+### This project focuses on performing Sentiment Analysis on Flipkart product reviews using Natural Language Processing (NLP) techniques and Machine Learning models. The goal is to classify reviews as Positive, Negative, or Neutral, ensuring balanced class distribution for accurate sentiment prediction.
 
-The dataset contains customer reviews, overall ratings, and associated metadata. The primary goal is to gain insights into customer sentiments, improve product recommendations, and identify areas for improvement based on user feedback.
+# Dataset
+### The dataset used is final_merged_flipkart_reviews.csv, which contains customer reviews along with ratings. Data preprocessing is performed to clean the text and remove unwanted elements.
 
-🚀 Features
-✅ Data Cleaning & Preprocessing:
-
-Removes URLs, special characters, emojis, and stopwords
-Converts text to lowercase
-Applies lemmatization for better text normalization
-✅ Exploratory Data Analysis (EDA):
-
-WordCloud visualization for frequent words
-Sentiment distribution analysis using bar plots
-Term Frequency-Inverse Document Frequency (TF-IDF) feature extraction
-✅ Sentiment Classification:
-
-Uses CardiffNLP’s Twitter RoBERTa model for sentiment prediction
-Implements Machine Learning classifiers like Naïve Bayes, Random Forest, and XGBoost
-Balances class distribution using SMOTE to avoid biases
-✅ Model Training & Evaluation:
-
-TfidfVectorizer converts text into numerical features
-Multiple classifiers tested for best performance
-Confusion matrix, accuracy, and classification reports used for evaluation
-✅ Model Deployment:
-
-The trained model is saved using pickle for reusability
-Can be integrated into a web app or API for real-time predictions
+# Key Features
+### Text Cleaning: Removal of URLs, emojis, mentions, and special characters.
+### Lemmatization: Used to standardize words to their base form.
+### Sentiment Classification: Implemented using DistilBERT and Naïve Bayes Classifier.
+### Class Balancing: SMOTE (Synthetic Minority Over-sampling Technique) was considered but not always used.
+### TF-IDF Vectorization: Converts text data into numerical form for model training.
+### WordCloud Visualization: Displays frequently used words in reviews.
+### Sentiment Distribution Analysis: Visualized using Seaborn count plots.
+# Technologies Used
+### Python
+### NLP Libraries: NLTK, Transformers (DistilBERT)
+### Data Processing: Pandas, NumPy, TextBlob
+### Machine Learning: Naïve Bayes, Random Forest, XGBoost, Gradient Boosting
+### Class Imbalance Handling: SMOTE
+### Visualization: Seaborn, Matplotlib, WordCloud
+# Model Training & Evaluation
+## Pipeline Approach:
+### Implemented a TF-IDF Vectorizer to convert text into numerical form.
+### Used Multinomial Naïve Bayes (MNB) as a classifier.
+## Imbalanced Data Handling:
+### Initially, reviews were unevenly distributed across sentiment categories.
+### After fine-tuning preprocessing and balancing strategies, a more accurate distribution was achieved.
+## Performance Metrics:
+### Accuracy Score
+### Confusion Matrix
+# Saving and Loading the Model
+### The trained model is serialized using Pickle (pickle.dump).
+### It can be loaded later for real-time sentiment predictions.
