@@ -1,4 +1,4 @@
-# 🛍️ Flipkart Reviews Sentiment Analysis and Rating Prediction
+# 🛍️ Flipkart Reviews Sentiment Analysis and Prediction
 
 This project performs **Sentiment Analysis** and **Rating Prediction** on Flipkart product reviews using **Natural Language Processing (NLP)** and **Multinomial Naive Bayes**. It includes a **Streamlit web app** where users can input reviews and get real-time sentiment predictions (Positive, Negative, or Neutral).
 
