@@ -9,7 +9,7 @@ This project performs **Sentiment Analysis** and **Rating Prediction** on Flipka
 - Scrape product reviews directly from Flipkart.
 - Clean and preprocess raw review data for analysis.
 - Analyze sentiment polarity (Positive / Negative / Neutral).
-- Predict ratings using review text.
+- Predict sentiment using review text.
 - Lightweight and interactive web app built using **Streamlit**.
 
 ---
